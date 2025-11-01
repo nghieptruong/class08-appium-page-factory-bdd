@@ -17,6 +17,9 @@ dependencies {
     implementation("org.testng:testng:7.11.0")
     implementation("com.aventstack:extentreports:5.1.2")
     implementation("commons-io:commons-io:2.20.0")
+    implementation("io.cucumber:cucumber-java:7.28.1")
+    implementation("io.cucumber:cucumber-testng:7.28.1")
+    implementation("tech.grasshopper:extentreports-cucumber7-adapter:1.14.0")
 }
 
 test {
@@ -25,5 +28,8 @@ test {
         useDefaultListeners = true
         //set TestNG output dir
         outputDirectory = file("$projectDir/test-output/testNG")
+
+        suites("src/test/resources/runner.xml")
     }
+    systemProperties System.getProperties()
 }

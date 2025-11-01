@@ -1,0 +1,5 @@
+report:
+  theme: STANDARD
+  title: "Automation Test Report"
+  encoding: "utf-8"
+  optimize-for-speed: true

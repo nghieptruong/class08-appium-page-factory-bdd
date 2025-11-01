@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- Report Theme: standard, dark -->
+        <theme>standard</theme>
+
+        <!-- Document Encoding -->
+        <encoding>UTF-8</encoding>
+
+        <!-- Protocol for CDN resources: http, https -->
+        <protocol>https</protocol>
+
+        <!-- Title of the document -->
+        <documentTitle>Automation Test Report</documentTitle>
+
+        <!-- Report Name -->
+        <reportName>Cucumber TestNG Framework</reportName>
+
+        <!-- Timestamp Format -->
+        <timestampFormat>MMM dd, yyyy HH:mm:ss</timestampFormat>
+
+        <!-- CSS File Path -->
+        <css>src/test/resources/css/extent.css</css>
+
+        <!-- JS File Path -->
+        <js>src/test/resources/js/extent.js</js>
+
+        <!-- Custom JavaScript for the report -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    // Custom JavaScript can be added here
+                });
+            ]]>
+        </scripts>
+
+        <!-- Custom CSS for the report -->
+        <styles>
+            <![CDATA[
+                .brand-logo { background-color: #4CAF50 !important; }
+                .nav-wrapper { background-color: #2196F3 !important; }
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>
